@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf \
+    /etc/skel/Applications \
+    /Applications \
+    /etc/skel/.local/bin
