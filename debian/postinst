@@ -15,7 +15,7 @@ mkdir -p /etc/skel/.local/bin
 		znx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage" \
 		pnx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/PNX-x86_64.AppImage" \
 		vmetal				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/VMetal-x86_64.AppImage" \
-		app					"https://github.com/AppImageCrafters/appmage-manager/releases/download/v0.1.2/app" \
+		app					"https://github.com/AppImageCrafters/appimage-manager/releases/download/v0.1.2/app-0.1.0-x86_64.AppImage" \
 		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
 		appimagetool		"https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage" \
 		wine				"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
