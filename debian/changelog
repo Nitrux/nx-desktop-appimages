@@ -1,6 +1,6 @@
 nx-desktop-appimages-legacy (0.0.2)  nitrux; urgency=medium
 
-  * Disable xtrace.
+  * Disable exit on errors.
 
  -- Uri Herrera <uri_herrera@nxos.org>  Mon, 25 Jan 2021 18:06:00 -0500
 
