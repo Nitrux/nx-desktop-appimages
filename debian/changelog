@@ -1,17 +1,5 @@
-nx-desktop-appimages (0.0.3)  nitrux; urgency=medium
-
-  * Add stable Maui AppImages.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Sat, 23 Jan 2021 15:47:00 -0500
-
-nx-desktop-appimages (0.0.2)  nitrux; urgency=medium
-
-  * Fix URL for appimage-manager.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Fri, 22 Jan 2021 15:29:00 -0500
-
-nx-desktop-appimages (0.0.1)  nitrux; urgency=medium
+nx-desktop-appimages-legacy (0.0.1)  nitrux; urgency=medium
 
   * Create package.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Thu, 21 Jan 2021 21:46:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 24 Jan 2021 18:06:00 -0500
