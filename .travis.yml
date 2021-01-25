@@ -6,7 +6,7 @@ script:
 branches:
   only:
   - main
-  - lgeacy
+  - legacy
   
 deploy:
   - provider: script
