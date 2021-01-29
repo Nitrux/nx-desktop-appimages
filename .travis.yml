@@ -6,13 +6,14 @@ script:
 branches:
   only:
   - main
+  - minimal
   
 deploy:
   - provider: script
     script: wget -qO - https://raw.githubusercontent.com/Nitrux/nitrux-repository-util/master/upload-pkgs | sh -s *.deb
     skip_cleanup: true
     on:
-      branch: main
+      branch: minimal
 
 notifications:
   email: false
