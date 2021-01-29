@@ -1,4 +1,4 @@
-Source: nx-desktop-appimages
+Source: nx-desktop-appimages-minimal
 Section: misc
 Priority: optional
 Maintainer: Uri Herrera <uri_herrera@nxos.org>
@@ -7,22 +7,11 @@ Standards-Version: 3.9.6
 Homepage: http://nx-desktop.org
 
 
-Package: nx-desktop-appimages
+Package: nx-desktop-appimages-minimal
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Defaults AppImages for NX Desktop
  Default AppImages for:
   - znx
   - vmetal
-  - pnx
-  - app
-  - appimaged
-  - wine
-  - kdenlive
-  - lmms
-  - libreoffice
-  - waterfox
-  - mpv
-  - inkscape
-  - gimp
 
