@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: nx-desktop-appimages-minimal
+Upstream-Name: nx-desktop-appimages
 Source: https://github.com/Nitrux/nx-desktop-appimages.git
 
 Files: *
