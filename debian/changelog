@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.0.3)  nitrux; urgency=medium
+
+  * Update appimage-cli-tool and GIMP.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 21 Feb 2021 20:01:00 -0500
+
 nx-desktop-appimages-legacy (0.0.2)  nitrux; urgency=medium
 
   * Disable exit on errors.
