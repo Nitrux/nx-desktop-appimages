@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.0.6)  nitrux; urgency=medium
+
+  * Update maui apps, add clip and shelf.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 04 Feb 2021 17:41:00 -0500
+
 nx-desktop-appimages (0.0.5)  nitrux; urgency=medium
 
   * Update gimp, waterfox, appimaged, and appimagetool.
