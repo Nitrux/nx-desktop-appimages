@@ -1,8 +1,14 @@
+nx-desktop-appimages (0.0.7)  nitrux; urgency=medium
+
+  * Update inkscape.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 05 Mar 2021 00:28:00 -0500
+
 nx-desktop-appimages (0.0.6)  nitrux; urgency=medium
 
   * Update maui apps, add clip and shelf.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Thu, 04 Feb 2021 17:41:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 04 Mar 2021 17:41:00 -0500
 
 nx-desktop-appimages (0.0.5)  nitrux; urgency=medium
 

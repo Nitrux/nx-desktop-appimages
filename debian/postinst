@@ -25,7 +25,7 @@ mkdir -p /etc/skel/.local/bin
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
 		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.23-20210218-x86_64.AppImage" \
 		waterfox-g3			"https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-g3-latest-x86_64.AppImage" \
-		inkscape			"https://inkscape.org/gallery/item/21590/Inkscape-3bc2e81-x86_64.AppImage" \
+		inkscape			"https://inkscape.org/gallery/item/23849/Inkscape-e86c870-x86_64.AppImage" \
 		lmms				"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage" \
 		buho				"https://download.kde.org/stable/maui/buho/1.2.1/buho-v1.2.1-amd64.AppImage" \
 		index				"https://download.kde.org/stable/maui/index/1.2.1/index-v1.2.1-amd64.AppImage" \
