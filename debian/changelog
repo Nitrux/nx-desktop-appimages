@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.0.4)  nitrux; urgency=medium
+
+  * Update maui apps, gimp, add shelf and clip.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 05 Mar 2021 04:19:00 -0500
+
 nx-desktop-appimages-legacy (0.0.3)  nitrux; urgency=medium
 
   * Update appimage-cli-tool and GIMP.
