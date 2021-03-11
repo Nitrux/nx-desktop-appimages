@@ -1,4 +1,4 @@
-Source: nx-desktop-appimages
+Source: nx-desktop-appimages-arm64
 Section: misc
 Priority: optional
 Maintainer: Uri Herrera <uri_herrera@nxos.org>
@@ -7,22 +7,11 @@ Standards-Version: 3.9.6
 Homepage: http://nx-desktop.org
 
 
-Package: nx-desktop-appimages
-Architecture: any
+Package: nx-desktop-appimages-arm64
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Defaults AppImages for NX Desktop
+Conflicts: nx-desktop-appimages, nx-desktop-appimages-legacy, nx-desktop-appimages-minimal
+Description: Defaults AppImages for NX Desktop (arm64)
  Default AppImages for:
-  - znx
-  - vmetal
-  - pnx
-  - app
-  - appimaged
-  - wine
-  - kdenlive
-  - lmms
-  - libreoffice
-  - waterfox
-  - mpv
-  - inkscape
-  - gimp
+  - maui apps
 
