@@ -1,10 +1,10 @@
-nx-desktop-appimage-arm64 (0.0.2)  nitrux; urgency=medium
+nx-desktop-appimages-arm64 (0.0.2)  nitrux; urgency=medium
 
   * Update package.
 
  -- Uri Herrera <uri_herrera@nxos.org>  Wed, 10 Mar 2021 20:35:00 -0500
 
-nx-desktop-appimage-arm64 (0.0.1)  nitrux; urgency=medium
+nx-desktop-appimages-arm64 (0.0.1)  nitrux; urgency=medium
 
   * Create package.
 
