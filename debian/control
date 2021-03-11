@@ -10,7 +10,7 @@ Homepage: http://nx-desktop.org
 Package: nx-desktop-appimages-arm64
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: nx-desktop-appimages, nx-desktop-appimages-legacy, nx-desktop-appimages-minimal
+Conflicts: nx-desktop-appimages, nx-desktop-appimages-legacy, nx-desktop-appimages-minimal, nx-desktop-appimages-legacy-minimal
 Description: Defaults AppImages for NX Desktop (arm64)
  Default AppImages for:
   - maui apps
