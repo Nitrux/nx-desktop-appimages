@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.0.9)  nitrux; urgency=medium
+
+  * Update kdenlive, inkscape, gimp.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 31 Mar 2021 17:20:00 -0500
+
 nx-desktop-appimages (0.0.8)  nitrux; urgency=medium
 
   * use older appimaged.
