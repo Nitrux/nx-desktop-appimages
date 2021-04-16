@@ -33,7 +33,7 @@ mkdir -p /etc/skel/.local/bin
 		shelf			"https://download.kde.org/stable/maui/shelf/1.1.0/shelf-v1.1.0-amd64.AppImage"
 } | {
 	while read name url; do
-		axel -a -q -o /Applications/$name "$url"
+		axel -a -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
 	done
 }
 
