@@ -1,6 +1,6 @@
 nx-desktop-appimages-legacy (0.0.6)  nitrux; urgency=medium
 
-  * Update kdenlive, gimp.
+  * Fix command to download AppImages.
 
  -- Uri Herrera <uri_herrera@nxos.org>  Fri, 16 Apr 2021 16:28:00 -0500
 
