@@ -8,6 +8,7 @@ Homepage: http://nx-desktop.org
 
 
 Package: nx-desktop-appimages
+Conflicts: nx-desktop-appimages-legacy, nx-desktop-appimages-legacy-minimal, nx-desktop-appimages-minimal, nx-desktop-appimages-arm64
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Defaults AppImages for NX Desktop
