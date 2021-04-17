@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.1.5)  nitrux; urgency=medium
+
+  * Add package conflicts field.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 17 Apr 2021 17:46:00 -0500
+
 nx-desktop-appimages (0.1.4)  nitrux; urgency=medium
 
   * Silence command output, change URL for apps.
