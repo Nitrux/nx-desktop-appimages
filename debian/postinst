@@ -21,23 +21,25 @@ mkdir -p /etc/skel/.local/bin
 		wine				"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
 
 	printf "%s %s\n" \
-		kdenlive		"https://download.kde.org/stable/kdenlive/20.12/linux/kdenlive-20.12.3-x86_64.appimage" \
-		libreoffice		"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
-		gimp			"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.23-20210325-x86_64.AppImage" \
-		waterfox-g3		"https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-g3-latest-x86_64.AppImage" \
-		inkscape		"https://inkscape.org/gallery/item/21590/Inkscape-3bc2e81-x86_64.AppImage" \
-		lmms			"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage" \
-		buho			"https://download.kde.org/stable/maui/buho/1.2.1/buho-v1.2.1-amd64.AppImage" \
-		index			"https://download.kde.org/stable/maui/index/1.2.1/index-v1.2.1-amd64.AppImage" \
-		nota			"https://download.kde.org/stable/maui/nota/1.2.1/nota-v1.2.1-amd64.AppImage" \
-		pix				"https://download.kde.org/stable/maui/pix/1.2.1/pix-v1.2.1-amd64.AppImage" \
-		station			"https://download.kde.org/stable/maui/1.2.0/appimages/station-stable-v1.2-amd64.AppImage" \
-		vvave			"https://download.kde.org/stable/maui/vvave/1.2.1/vvave-v1.2.1-amd64.AppImage" \
-		clip			"https://download.kde.org/stable/maui/clip/1.1.0/clip-v1.1.0-amd64.AppImage" \
-		shelf			"https://download.kde.org/stable/maui/shelf/1.1.0/shelf-v1.1.0-amd64.AppImage"
+		kdenlive			"https://download.kde.org/stable/kdenlive/20.12/linux/kdenlive-20.12.3-x86_64.appimage" \
+		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
+		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.23-20210325-x86_64.AppImage" \
+		waterfox-g3			"https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-g3-latest-x86_64.AppImage" \
+		inkscape			"https://inkscape.org/gallery/item/21590/Inkscape-3bc2e81-x86_64.AppImage" \
+		lmms				"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage"
+
+	printf "%s %s\n" \
+		buho				"https://repo.nxos.org/iso/apps/buho" \
+		clip				"https://repo.nxos.org/iso/apps/clip" \
+		index				"https://repo.nxos.org/iso/apps/index" \
+		nota				"https://repo.nxos.org/iso/apps/nota" \
+		pix					"https://repo.nxos.org/iso/apps/pix" \
+		shelf				"https://repo.nxos.org/iso/apps/shelf" \
+		station				"https://repo.nxos.org/iso/apps/station" \
+		vvave				"https://repo.nxos.org/iso/apps/vvave"
 } | {
 	while read name url; do
-		axel -a -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
+		axel -a -n 2 -q -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
 	done
 }
 
