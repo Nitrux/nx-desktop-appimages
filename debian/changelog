@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.0.9)  nitrux; urgency=medium
+
+  * Move Maui Appimages to separate package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 30 Apr 2021 03:28:00 -0500
+
 nx-desktop-appimages-legacy (0.0.8)  nitrux; urgency=medium
 
   * Update kdenlive.
