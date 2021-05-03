@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.1.7)  nitrux; urgency=medium
+
+  * Adon't add maui appimage suntil they're fixed.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 02 May 2021 23:38:00 -0500
+
 nx-desktop-appimages (0.1.6)  nitrux; urgency=medium
 
   * Update kdenlive.

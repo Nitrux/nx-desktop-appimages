@@ -27,16 +27,6 @@ mkdir -p /etc/skel/.local/bin
 		waterfox-g3			"https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-g3-latest-x86_64.AppImage" \
 		inkscape			"https://inkscape.org/gallery/item/21590/Inkscape-3bc2e81-x86_64.AppImage" \
 		lmms				"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage"
-
-	printf "%s %s\n" \
-		buho				"https://repo.nxos.org/iso/apps/buho" \
-		clip				"https://repo.nxos.org/iso/apps/clip" \
-		index				"https://repo.nxos.org/iso/apps/index" \
-		nota				"https://repo.nxos.org/iso/apps/nota" \
-		pix					"https://repo.nxos.org/iso/apps/pix" \
-		shelf				"https://repo.nxos.org/iso/apps/shelf" \
-		station				"https://repo.nxos.org/iso/apps/station" \
-		vvave				"https://repo.nxos.org/iso/apps/vvave"
 } | {
 	while read name url; do
 		axel -a -n 2 -q -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
