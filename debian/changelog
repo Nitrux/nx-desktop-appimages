@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.1.8)  nitrux; urgency=medium
+
+  * Update inkscape, gimp, kdenlive, libreoffice appimages.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 17 May 2021 16:18:00 -0500
+
 nx-desktop-appimages (0.1.7)  nitrux; urgency=medium
 
   * Adon't add maui appimage suntil they're fixed.
