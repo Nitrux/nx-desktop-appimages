@@ -20,8 +20,8 @@ mkdir -p /etc/skel/.local/bin
 	printf "%s %s\n" \
 		kdenlive			"https://download.kde.org/stable/kdenlive/21.04/linux/kdenlive-21.04.1-x86_64.appimage" \
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
-		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210513-x86_64.AppImage" \
-		inkscape			"https://inkscape.org/gallery/item/23849/Inkscape-e86c870-x86_64.AppImage" \
+		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210520-x86_64.AppImage" \
+		inkscape			"https://inkscape.org/gallery/item/26933/Inkscape-c4e8f9e-x86_64.AppImage" \
 		lmms				"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage"
 } | {
 	while read name url; do

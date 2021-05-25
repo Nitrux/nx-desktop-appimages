@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.1.1)  nitrux; urgency=medium
+
+  * Update GIMP, Inkscape AppImages.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 24 May 2021 13:11:00 -0500
+
 nx-desktop-appimages-legacy (0.1.0)  nitrux; urgency=medium
 
   * Update Kdenlive, GIMP, Inkscape AppImages.
