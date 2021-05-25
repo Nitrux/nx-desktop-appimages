@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.1.2)  nitrux; urgency=medium
+
+  * Add Heroic Games Launcher.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 24 May 2021 18:07:00 -0500
+
 nx-desktop-appimages-legacy (0.1.1)  nitrux; urgency=medium
 
   * Update GIMP, Inkscape AppImages.

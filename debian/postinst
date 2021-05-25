@@ -23,6 +23,7 @@ mkdir -p /etc/skel/.local/bin
 		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210520-x86_64.AppImage" \
 		inkscape			"https://inkscape.org/gallery/item/26933/Inkscape-c4e8f9e-x86_64.AppImage" \
 		lmms				"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage"
+		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.6.1/heroic-1.6.1.AppImage"
 } | {
 	while read name url; do
 		axel -a -n 2 -q -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
