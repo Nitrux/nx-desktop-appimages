@@ -1,4 +1,4 @@
-nx-desktop-appimages-legacy (0.1.2)  nitrux; urgency=medium
+nx-desktop-appimages-legacy (0.1.3)  nitrux; urgency=medium
 
   * Fix typo in postinst.
 
