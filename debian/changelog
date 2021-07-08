@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.1.5)  nitrux; urgency=medium
+
+  * Update Kdenlive.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 08 Jul 2021 13:15:00 -0500
+
 nx-desktop-appimages-legacy (0.1.4)  nitrux; urgency=medium
 
   * Update Kdenlive, Heroic launcher and Gimp.

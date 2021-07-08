@@ -18,12 +18,12 @@ mkdir -p /etc/skel/.local/bin
 		wine			"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
 
 	printf "%s %s\n" \
-		kdenlive			"https://download.kde.org/stable/kdenlive/21.04/linux/kdenlive-21.04.2-x86_64.appimage" \
+		kdenlive			"https://download.kde.org/stable/kdenlive/21.04/linux/kdenlive-21.04.3-x86_64.appimage" \
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
 		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210610-x86_64.AppImage" \
 		inkscape			"https://inkscape.org/gallery/item/26933/Inkscape-c4e8f9e-x86_64.AppImage" \
 		lmms				"https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage" \
-		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.7.2/heroic-1.7.2.AppImage"
+		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.8.2/Heroic-1.8.2.AppImage"
 } | {
 	while read name url; do
 		axel -a -n 2 -q -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
