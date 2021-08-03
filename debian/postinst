@@ -23,7 +23,7 @@ mkdir -p /etc/skel/.local/bin
 	printf "%s %s\n" \
 		kdenlive			"https://download.kde.org/stable/kdenlive/21.04/linux/kdenlive-21.04.3-x86_64.appimage" \
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
-		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210603-x86_64.AppImage" \
+		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210610-x86_64.AppImage" \
 		inkscape			"https://inkscape.org/gallery/item/26933/Inkscape-c4e8f9e-x86_64.AppImage" \
 		waterfox-g3			"https://download.opensuse.org/repositories/home:/hawkeye116477:/waterfox/AppImage/waterfox-g3-latest-x86_64.AppImage"
 } | {
