@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.2.1)  nitrux; urgency=medium
+
+  * Update inkscape, kdenlive and remove lmms.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 31 Aug 2021 01:45:00 -0500
+
 nx-desktop-appimages (0.2.0)  nitrux; urgency=medium
 
   * Update inkscape, gimp, kdenlive and remove lmms appimages.
