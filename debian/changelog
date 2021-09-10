@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.2.2)  nitrux; urgency=medium
+
+  * Remove waterfox, add firefox.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 11 Sep 2021 15:56:00 -0500
+
 nx-desktop-appimages (0.2.1)  nitrux; urgency=medium
 
   * Update inkscape, kdenlive and remove lmms.
