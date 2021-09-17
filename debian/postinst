@@ -12,12 +12,12 @@ mkdir -p /etc/skel/.local/bin
 
 {
 	printf "%s %s\n" \
-		znx				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage" \
-		pnx				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/PNX-x86_64.AppImage" \
+		znx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage" \
+		pnx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/PNX-x86_64.AppImage" \
 		vmetal				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/VMetal-x86_64.AppImage" \
-		app				"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
+		app					"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
 		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-		appimagetool			"https://github.com/probonopd/go-appimage/releases/download/continuous/appimagetool-640-x86_64.AppImage" \
+		appimagetool		"https://github.com/probonopd/go-appimage/releases/download/continuous/appimagetool-640-x86_64.AppImage" \
 		wine				"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
 
 	printf "%s %s\n" \
@@ -25,7 +25,7 @@ mkdir -p /etc/skel/.local/bin
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
 		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210610-x86_64.AppImage" \
 		inkscape			"https://media.inkscape.org/dl/resources/file/Inkscape-3bc2e81-x86_64.AppImage" \
-		firefox			"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-92.0.r20210903235534-x86_64.AppImage"
+		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-92.0.r20210903235534-x86_64.AppImage"
 } | {
 	while read name url; do
 		axel -a -n 2 -q -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
