@@ -4,7 +4,7 @@ nx-desktop-appimages-legacy (0.2.0)  nitrux; urgency=medium
 
  -- Uri Herrera <uri_herrera@nxos.org>  Fri, 24 Sep 2021 05:54:00 -0500
 
- nx-desktop-appimages-legacy (0.1.9)  nitrux; urgency=medium
+nx-desktop-appimages-legacy (0.1.9)  nitrux; urgency=medium
 
   * Update GIMP, Heroic and Firefox.
 
