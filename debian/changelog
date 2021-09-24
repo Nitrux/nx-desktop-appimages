@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.1.9)  nitrux; urgency=medium
+
+  * Update GIMP, Heroic and Firefox.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 24 Sep 2021 05:34:00 -0500
+
 nx-desktop-appimages-legacy (0.1.8)  nitrux; urgency=medium
 
   * Update Kdenlive, Inkscape and Heroic and removed LMMS.

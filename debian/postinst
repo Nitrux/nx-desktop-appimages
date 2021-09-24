@@ -20,10 +20,11 @@ mkdir -p /etc/skel/.local/bin
 	printf "%s %s\n" \
 		kdenlive			"https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.0a-x86_64.appimage" \
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
-		gimp				"https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210610-x86_64.AppImage" \
+		gimp				"https://github.com/mttbernardini/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210730-x86_64.AppImage" \
 		inkscape			"https://media.inkscape.org/dl/resources/file/Inkscape-3bc2e81-x86_64.AppImage" \
-		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.9.2/Heroic-1.9.2.AppImage" \
-		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-92.0.r20210903235534-x86_64.AppImage"
+		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.9.3/Heroic-1.9.3.AppImage" \
+		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/
+firefox-92.0.r20210922161155-x86_64.AppImage"
 
 } | {
 	while read name url; do
