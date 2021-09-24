@@ -23,8 +23,7 @@ mkdir -p /etc/skel/.local/bin
 		gimp				"https://github.com/mttbernardini/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210730-x86_64.AppImage" \
 		inkscape			"https://media.inkscape.org/dl/resources/file/Inkscape-3bc2e81-x86_64.AppImage" \
 		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.9.3/Heroic-1.9.3.AppImage" \
-		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/
-firefox-92.0.r20210922161155-x86_64.AppImage"
+		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-92.0.r20210922161155-x86_64.AppImage"
 
 } | {
 	while read name url; do
