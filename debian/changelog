@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.2.2)  nitrux; urgency=medium
+
+  * Update firefox, heroic and kdenlive.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 15 Oct 2021 13:52:00 -0500
+
 nx-desktop-appimages-legacy (0.2.1)  nitrux; urgency=medium
 
   * Update Inkscape and kdenlive.
