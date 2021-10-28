@@ -12,17 +12,17 @@ mkdir -p /etc/skel/.local/bin
 
 {
 	printf "%s %s\n" \
-		app				"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
-		appimaged		"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-		appimagetool	"https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage" \
-		wine			"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
+		app						"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
+		appimaged				"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
+		appimagetool			"https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage" \
+		wine					"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
 
 	printf "%s %s\n" \
 		kdenlive			"https://download.kde.org/stable/kdenlive/21.08/linux/kdenlive-21.08.2-x86_64.appimage" \
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
 		gimp				"https://github.com/mttbernardini/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210730-x86_64.AppImage" \
 		inkscape			"https://inkscape.org/gallery/item/29256/Inkscape-3bf5ae0-x86_64.AppImage" \
-		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.10.2/Heroic-1.10.2.AppImage" \
+		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.10.3/Heroic-1.10.3.AppImage" \
 		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-93.0.r20210927210923-x86_64.AppImage"
 
 } | {
