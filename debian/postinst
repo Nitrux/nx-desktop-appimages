@@ -27,7 +27,7 @@ mkdir -p /etc/skel/.local/bin
 
 } | {
 	while read name url; do
-		axel -a -n 4 -q -k -U "BrightSign/8.2.55.5 (XT1144)Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36" "$url" -o /Applications/$name
+		axel -a -n 4 -k -U "BrightSign/8.2.55.5 (XT1144)Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36" "$url" -o /Applications/$name
 	done
 }
 
