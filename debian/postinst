@@ -13,6 +13,7 @@ mkdir -p /etc/skel/Applications
 		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
 		znx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage" \
 		vmetal				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/VMetal-x86_64.AppImage"
+
 	printf "%s %s\n" \
 		sddm				"https://github.com/Nitrux/sddm-appimage/releases/download/latest/sddm-latest-x86_64.AppImage"
 } | {
@@ -76,3 +77,14 @@ touch /var/log/sddm.log
 chown sddm:sddm /var/log/sddm.log
 
 #	END of SDDM Config
+
+#   Add SDDM init script
+
+{
+	printf "%s %s\n" \
+		sddm					"https://raw.githubusercontent.com/UriHerrera/storage/master/Scripts/sddm" 
+} | {
+	while read name url; do
+		axel -a -n 8 -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /etc/init.d/$name
+	done
+}
