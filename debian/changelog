@@ -1,3 +1,9 @@
+nx-desktop-appimages-minimal (0.0.5)  nitrux; urgency=medium
+
+  * Remove sddm appimage and config.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 15:50:00 -0500
+
 nx-desktop-appimages-minimal (0.0.4)  nitrux; urgency=medium
 
   * Add permissions.
