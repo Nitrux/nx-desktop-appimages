@@ -1,21 +1,78 @@
 #! /bin/bash
 
-set -xe
+set -x
 
-
-#	add add AppImages.
+#	Add AppImages.
 
 mkdir -p /Applications
 mkdir -p /etc/skel/Applications
 
 {
 	printf "%s %s\n" \
+		app					"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
+		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
 		znx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage" \
 		vmetal				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/VMetal-x86_64.AppImage"
+	printf "%s %s\n" \
+		sddm				"https://github.com/Nitrux/sddm-appimage/releases/download/latest/sddm-latest-x86_64.AppImage"
 } | {
 	while read name url; do
-		axel -a -q -o /Applications/$name "$url"
+		axel -a -n 8 -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
 	done
 }
 
 chmod +x /Applications/*
+
+#	START SDDM CONFIG
+
+THIS_PACKAGE=sddm
+DEFAULT_DISPLAY_MANAGER_FILE=/etc/X11/default-display-manager
+
+# creating sddm group if not already there
+if ! getent group sddm >/dev/null; then
+    addgroup --system sddm
+fi
+
+# creating sddm user if not already there
+if ! getent passwd sddm >/dev/null; then
+    adduser --system --ingroup sddm --home /var/lib/sddm sddm
+    usermod -c "Simple Desktop Display Manager" sddm
+    usermod -d "/var/lib/sddm"                  sddm
+    usermod -g "sddm"                           sddm
+    usermod -s "/bin/false"                     sddm
+fi
+
+if [ -d /var/lib/sddm ]; then
+    # There has been a -R in version prior to 0.19
+    # but this opens up symlink attacks. Remove it.
+    chown sddm:sddm /var/lib/sddm
+    chmod 0750 /var/lib/sddm
+fi
+
+if ! [ -e "$DEFAULT_DISPLAY_MANAGER_FILE" ]; then
+    if db_get shared/default-x-display-manager; then
+        if [ -z "$RET" ]; then
+            RET="$THIS_PACKAGE"
+        fi
+        if [ "$THIS_PACKAGE" != "$RET" ]; then
+            echo "Please be sure to run \"dpkg --configure $RET\"."
+        fi
+        if db_get "$RET"/daemon_name; then
+            echo "$RET" > "$DEFAULT_DISPLAY_MANAGER_FILE"
+        fi
+    fi
+fi
+
+# remove the old display manager file if exists
+if [ -e "$DEFAULT_DISPLAY_MANAGER_FILE.dpkg-tmp" ]; then
+    rm "$DEFAULT_DISPLAY_MANAGER_FILE.dpkg-tmp"
+fi
+
+if [ -x /etc/init.d/sddm ]; then
+    update-rc.d sddm defaults >/dev/null 2>&1
+fi
+
+touch /var/log/sddm.log
+chown sddm:sddm /var/log/sddm.log
+
+#	END of SDDM Config

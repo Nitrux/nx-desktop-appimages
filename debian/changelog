@@ -1,3 +1,9 @@
+nx-desktop-appimages-minimal (0.0.2)  nitrux; urgency=medium
+
+  * Add sddm.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 00:51:00 -0500
+
 nx-desktop-appimages-minimal (0.0.1)  nitrux; urgency=medium
 
   * Create package.
