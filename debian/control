@@ -10,8 +10,10 @@ Homepage: http://nx-desktop.org
 Package: nx-desktop-appimages-minimal
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Defaults AppImages for NX Desktop
+Conflicts: nx-desktop-appimages
+Description: Defaults AppImages for minimal NX Desktop
  Default AppImages for:
   - znx
-  - vmetal
+  - app
+  - appimaged
 
