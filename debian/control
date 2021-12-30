@@ -1,4 +1,4 @@
-Source: nx-desktop-appimages-minimal
+Source: nx-desktop-appimages-vfio
 Section: misc
 Priority: optional
 Maintainer: Uri Herrera <uri_herrera@nxos.org>
@@ -7,13 +7,9 @@ Standards-Version: 3.9.6
 Homepage: http://nx-desktop.org
 
 
-Package: nx-desktop-appimages-minimal
+Package: nx-desktop-appimages-vfio
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: nx-desktop-appimages
-Description: Defaults AppImages for minimal NX Desktop
+Description: Defaults AppImages for VFIO
  Default AppImages for:
-  - znx
-  - app
-  - appimaged
-
+  - vmetal

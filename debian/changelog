@@ -1,35 +1,5 @@
-nx-desktop-appimages-minimal (0.0.6)  nitrux; urgency=medium
-
-  * Move vmetal appimage.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 20:47:00 -0500
-
-nx-desktop-appimages-minimal (0.0.5)  nitrux; urgency=medium
-
-  * Remove sddm appimage and config.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 15:50:00 -0500
-
-nx-desktop-appimages-minimal (0.0.4)  nitrux; urgency=medium
-
-  * Add permissions.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 06:20:00 -0500
-
-nx-desktop-appimages-minimal (0.0.3)  nitrux; urgency=medium
-
-  * Add sddm init script.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 05:59:00 -0500
-
-nx-desktop-appimages-minimal (0.0.2)  nitrux; urgency=medium
-
-  * Add sddm.
-
- -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 00:51:00 -0500
-
-nx-desktop-appimages-minimal (0.0.1)  nitrux; urgency=medium
+nx-desktop-appimages-vfio (0.0.1)  nitrux; urgency=medium
 
   * Create package.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Fri, 29 Jan 2021 15:00:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 29 Dec 2021 20:50:00 -0500
