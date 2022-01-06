@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.2.7)  nitrux; urgency=medium
+
+  * Trim package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 05 Jan 2022 18:07:00 -0500
+
 nx-desktop-appimages (0.2.6)  nitrux; urgency=medium
 
   * Update firefox.
