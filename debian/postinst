@@ -16,7 +16,7 @@ mkdir -p /etc/skel/.local/bin
 		pnx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/PNX-x86_64.AppImage" \
 		app					"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
 		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-		appimagetool		"https://github.com/probonopd/go-appimage/releases/download/continuous/appimagetool-640-x86_64.AppImage"
+		appimagetool		"https://github.com/probonopd/go-appimage/releases/download/continuous/appimagetool-650-x86_64.AppImage"
 
 	printf "%s %s\n" \
 		wine				"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
