@@ -1,6 +1,12 @@
+nx-desktop-appimages (0.2.9)  nitrux; urgency=medium
+
+  * Fix postinst.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 07 Jan 2022 20:49:00 -0500
+
 nx-desktop-appimages (0.2.8)  nitrux; urgency=medium
 
-  * Fix tpyo in postinst.
+  * Fix typo in postinst.
 
  -- Uri Herrera <uri_herrera@nxos.org>  Fri, 07 Jan 2022 20:13:00 -0500
 
