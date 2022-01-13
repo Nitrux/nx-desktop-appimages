@@ -21,8 +21,8 @@ mkdir -p /etc/skel/.local/bin
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage" \
 		gimp				"https://github.com/mttbernardini/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-2.10.25-20210730-x86_64.AppImage" \
 		inkscape			"https://inkscape.org/gallery/item/29256/Inkscape-3bf5ae0-x86_64.AppImage" \
-		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.10.3/Heroic-1.10.3.AppImage" \
-		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-95.0.r20211218203254-x86_64.AppImage" \
+		heroic				"https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.0.2/Heroic-2.0.2.AppImage" \
+		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-96.0.r20220106144528-x86_64.AppImage" \
 		wine				"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
 } | {
 	while read name url; do
