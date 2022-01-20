@@ -19,7 +19,7 @@ mkdir -p /etc/skel/.local/bin
 		appimagetool		"https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage"
 } | {
 	while read name url; do
-		axel -a -q -n 8 -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
+		axel -a -q -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" -n 8 "$url" -o /Applications/$name
 	done
 }
 
