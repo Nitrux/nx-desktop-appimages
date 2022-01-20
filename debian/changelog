@@ -1,3 +1,9 @@
+nx-desktop-appimages (0.3.0)  nitrux; urgency=medium
+
+  * Remove Wine from this package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 20 Jan 2022 01:23:00 -0500
+
 nx-desktop-appimages (0.2.9)  nitrux; urgency=medium
 
   * Fix postinst.
