@@ -20,7 +20,7 @@ mkdir -p /etc/skel/.local/bin
 		wine				"https://github.com/ferion11/Proton_Appimage/releases/download/continuous/proton-linux-x86-v4.2-PlayOnLinux-x86_64.AppImage"
 } | {
 	while read name url; do
-		axel -a -q -n 4 -k -U "BrightSign/8.2.55.5 (XT1144)Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36" "$url" -o /Applications/$name
+		axel -a -q -k -U "BrightSign/8.2.55.5 (XT1144)Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36" -n 8 "$url" -o /Applications/$name
 	done
 }
 
