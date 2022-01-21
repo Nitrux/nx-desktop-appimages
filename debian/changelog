@@ -1,5 +1,11 @@
 nx-desktop-appimages-legacy (0.3.2)  nitrux; urgency=medium
 
+  * Update firefox.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 20 Jan 2022 21:09:00 -0500
+
+nx-desktop-appimages-legacy (0.3.2)  nitrux; urgency=medium
+
   * Remove inkscape, kdenlive, heroic, gimp.
 
  -- Uri Herrera <uri_herrera@nxos.org>  Sat, 15 Jan 2022 03:44:00 -0500
