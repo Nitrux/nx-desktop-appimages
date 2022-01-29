@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.3.5)  nitrux; urgency=medium
+
+  * Remove wine.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 28 Jan 2022 17:43:00 -0500
+
 nx-desktop-appimages-legacy (0.3.4)  nitrux; urgency=medium
 
   * Update firefox.
