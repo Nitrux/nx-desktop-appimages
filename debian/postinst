@@ -15,7 +15,7 @@ mkdir -p /etc/skel/.local/bin
 		app					"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
 		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
 		appimagetool		"https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage" \
-		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-98.0.r20220304153049-x86_64.AppImage" \
+		firefox				"https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-98.0.r20220313140707-x86_64.AppImage" \
 		libreoffice			"https://libreoffice.soluzioniopen.com/stable/standard/LibreOffice-fresh.standard-x86_64.AppImage"
 } | {
 	while read name url; do
