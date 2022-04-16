@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.4.3)  nitrux; urgency=medium
+
+  * Update firefox.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 15 Apr 2022 18:02:00 -0500
+
 nx-desktop-appimages-legacy (0.4.2)  nitrux; urgency=medium
 
   * Update firefox.
