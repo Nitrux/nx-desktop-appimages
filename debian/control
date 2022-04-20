@@ -1,5 +1,5 @@
 Source: nx-desktop-appimages
-Section: misc
+Section: optional
 Priority: optional
 Maintainer: Uri Herrera <uri_herrera@nxos.org>
 Build-Depends: debhelper (>=9)
@@ -11,19 +11,10 @@ Package: nx-desktop-appimages
 Conflicts: nx-desktop-appimages-legacy, nx-desktop-appimages-legacy-minimal, nx-desktop-appimages-minimal, nx-desktop-appimages-arm64
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: znx, appimaged, appimage-cli-tool, appimagetool
 Description: Defaults AppImages for NX Desktop
  Default AppImages for:
   - znx
-  - vmetal
-  - pnx
   - app
   - appimaged
-  - wine
-  - kdenlive
-  - lmms
-  - libreoffice
-  - waterfox
-  - mpv
-  - inkscape
-  - gimp
 
