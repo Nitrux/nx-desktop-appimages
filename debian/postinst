@@ -9,9 +9,9 @@ mkdir -p /etc/skel/Applications
 
 {
 	printf "%s %s\n" \
-		app					"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
+		app				"https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
 		appimaged			"https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-		znx					"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage"
+		znx				"https://raw.githubusercontent.com/Nitrux/storage/master/AppImages/znx-master-x86_64.AppImage"
 } | {
 	while read name url; do
 		axel -a -q -n 8 -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
