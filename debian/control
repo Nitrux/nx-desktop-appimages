@@ -14,5 +14,6 @@ Description: Defaults AppImages for NX Desktop
  Default AppImages for:
   - app
   - appimaged
+  - appimagetool
   - firefox
 
