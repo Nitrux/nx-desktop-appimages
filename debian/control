@@ -14,13 +14,5 @@ Description: Defaults AppImages for NX Desktop
  Default AppImages for:
   - app
   - appimaged
-  - wine
-  - kdenlive
-  - lmms
-  - libreoffice
-  - waterfox
-  - mpv
-  - inkscape
-  - gimp
-  - maui apps
+  - firefox
 
