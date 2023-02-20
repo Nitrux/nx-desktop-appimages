@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.5.6)  nitrux; urgency=medium
+
+  * Remove Firefox.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 20 Feb 2023 00:14:00 -0500
+
 nx-desktop-appimages-legacy (0.5.5)  nitrux; urgency=medium
 
   * Update Firefox.
