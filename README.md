@@ -1,4 +1,4 @@
-# NX Desktop AppImages [![Build Status](https://travis-ci.org/Nitrux/nx-desktop-appimages.svg?branch=legacy)](https://travis-ci.org/Nitrux/nx-desktop-appimages)
+# NX Desktop AppImages
 
 AppImages included by default in Nitrux.
 
