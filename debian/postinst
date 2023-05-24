@@ -14,7 +14,7 @@ mkdir -p /Applications \
     printf "%s %s\n" \
         app             "https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
         appimaged       "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-        firefox         "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-113.0.r20230511191846-x86_64.AppImage"
+        firefox         "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-113.0.r20230522134052-x86_64.AppImage"
 } | {
     while read name url; do
         axel -a -q -k -U "BrightSign/8.2.55.5 (XT1144)Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36" -n 8 "$url" -o /Applications/$name
