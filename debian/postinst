@@ -1,25 +1,48 @@
-#! /bin/bash
+#!/bin/bash
 
 set -x
 
+# Set User-Agent header
+user_agent="BrightSign/8.2.55.5 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36"
 
-# Add AppImages.
+# Function to download and install an AppImage
+download_appimage() {
+    local name="$1"
+    local url="$2"
+    local destination="/Applications/$name"
 
-mkdir -p /Applications \
-         /etc/skel/Applications \
-         /etc/skel/.local/bin
-
-
-{
-    printf "%s %s\n" \
-        app             "https://github.com/AppImageCrafters/appimage-cli-tool/releases/download/v0.1.4/appimage-cli-tool-0.1.4-x86_64.AppImage" \
-        appimaged       "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-        firefox         "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-114.0.r20230608214645-x86_64.AppImage"
-} | {
-    while read name url; do
-        axel -a -q -k -U "BrightSign/8.2.55.5 (XT1144)Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36" -n 8 "$url" -o /Applications/$name
-    done
+    axel -a -q -k -U "$user_agent" -n 8 "$url" -o "$destination"
+    chmod +x "$destination"
 }
 
-chmod +x /Applications/*
-mv /Applications/appimaged /etc/skel/.local/bin
+# Function to download and install a binary
+download_binary() {
+    local name="$1"
+    local url="$2"
+    local destination="/usr/bin/$name"
+
+    axel -a -q -k -U "$user_agent" -n 8 "$url" -o "$destination"
+    chmod +x "$destination"
+}
+
+# Add AppImages
+mkdir -p /Applications /etc/skel/Applications /etc/skel/.local/bin
+
+# Download and install AppImages
+{
+    printf "%s %s\n" \
+        "appimaged" "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
+        "firefox" "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-114.0.r20230608214645-x86_64.AppImage"
+} | while read -r name url; do
+    download_appimage "$name" "$url"
+done
+
+mv "/Applications/appimaged" "/etc/skel/.local/bin"
+
+# Add zap
+{
+    printf "%s %s\n" \
+        "zap" "https://github.com/srevinsaju/zap/releases/download/continuous/zap-amd64"
+} | while read -r name url; do
+    download_binary "$name" "$url"
+done
