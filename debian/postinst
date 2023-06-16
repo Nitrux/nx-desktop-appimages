@@ -32,7 +32,7 @@ mkdir -p /Applications /etc/skel/Applications /etc/skel/.local/bin
 {
     printf "%s %s\n" \
         "appimaged" "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage" \
-        "firefox" "https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-114.0.r20230608214645-x86_64.AppImage"
+        "firefox" "$(curl -s https://api.github.com/repos/srevinsaju/Firefox-Appimage/releases/latest | grep -oE 'https://github.com/srevinsaju/Firefox-Appimage/releases/download/.*/firefox.*x86_64.AppImage')"
 } | while read -r name url; do
     download_appimage "$name" "$url"
 done
