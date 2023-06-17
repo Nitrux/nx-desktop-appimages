@@ -1,5 +1,13 @@
 #!/bin/bash
 
+set -x
+
+# Check if directories exist
+if [ ! -d "/Applications" ] || [ ! -d "/etc/skel/.local/bin" ]; then
+    echo "One or both directories do not exist. Exiting."
+    exit 1
+fi
+
 # Set User-Agent header
 user_agent="BrightSign/8.2.55.5 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36"
 
@@ -18,13 +26,9 @@ download_binary() {
     local name="$1"
     local url="$2"
     local destination="/usr/bin/$name"
-
     axel -a -q -k -U "$user_agent" -n 8 "$url" -o "$destination"
     chmod +x "$destination"
 }
-
-# Add AppImages
-mkdir -p -- "/Applications" "/etc/skel/.local/bin"
 
 # Retrieve the latest release URL for Firefox AppImage
 latest_release_url=$(curl -sL https://api.github.com/repos/srevinsaju/Firefox-Appimage/releases/tags/firefox | grep -oE 'https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox.*x86_64.AppImage' | head -n 1)
