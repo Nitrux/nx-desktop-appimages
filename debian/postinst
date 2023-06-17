@@ -53,7 +53,7 @@ filename=$(basename "$latest_release_url")
 
 # Download and install the latest Firefox AppImage
 download_appimage "$filename" "$latest_release_url"
-mv /Applications/firefox.*x86_64.AppImage /Applications/firefox
+mv /Applications/firefox-* /Applications/firefox
 
 # Download and install appimaged AppImage
 download_appimage "appimaged" "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage"
