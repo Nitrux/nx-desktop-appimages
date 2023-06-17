@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.6.8)  nitrux; urgency=medium
+
+  * Update script.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 17 Jun 2023 04:21:00 -0500
+
 nx-desktop-appimages-legacy (0.6.7)  nitrux; urgency=medium
 
   * Update script.
