@@ -1,14 +1,17 @@
-#! /bin/bash
+#!/bin/bash
 
 set -x
 
-{
-	printf "%s %s\n" \
-		vmetal				"https://raw.githubusercontent.com/Nitrux/old-storage/master/AppImages/VMetal-x86_64.AppImage"
-} | {
-	while read name url; do
-		axel -a -q -n 8 -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$url" -o /Applications/$name
-	done
-}
+name="vmetal"
+owner="Nitrux"
+repo="old-storage"
+branch="master"
+path="AppImages/VMetal-x86_64.AppImage"
+output_dir="/Applications"
 
-chmod +x /Applications/*
+url="https://api.github.com/repos/$owner/$repo/contents/$path?ref=$branch"
+download_url=$(curl -s "$url" | grep -o '"download_url": "[^"]*' | cut -d'"' -f4)
+
+axel -a -q -n 8 -k -U "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36" "$download_url" -o "$output_dir/$name"
+
+chmod +x "$output_dir/$name"

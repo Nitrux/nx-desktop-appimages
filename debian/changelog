@@ -1,3 +1,9 @@
+nx-desktop-appimages-vfio (0.0.3)  nitrux; urgency=medium
+
+  * Update postinst.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 19 Jul 2023 15:59:00 -0500
+
 nx-desktop-appimages-vfio (0.0.2)  nitrux; urgency=medium
 
   * Update url.
