@@ -1,3 +1,9 @@
+nx-desktop-appimages-legacy (0.6.9)  nitrux; urgency=medium
+
+  * Add hw-probe.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 20 Jul 2023 17:27:00 -0500
+
 nx-desktop-appimages-legacy (0.6.8)  nitrux; urgency=medium
 
   * Update script.

@@ -45,6 +45,16 @@ download_binary() {
     chmod +x "$destination"
 }
 
+# Retrieve the latest release URL for hw-probe AppImage with tag "1.6"
+latest_release_url=$(curl -sL "https://api.github.com/repos/linuxhw/hw-probe/releases/tags/1.6" | grep -oE 'https://github.com/linuxhw/hw-probe/releases/download/1.6/hw-probe.*x86_64.AppImage' | head -n 1)
+
+# Extract the filename from the URL
+filename=$(basename "$latest_release_url")
+
+# Download and install the latest hw-probe AppImage
+download_appimage "$filename" "$latest_release_url"
+mv /Applications/hw-probe-* /Applications/hw-probe
+
 # Retrieve the latest release URL for Firefox AppImage
 latest_release_url=$(curl -sL https://api.github.com/repos/srevinsaju/Firefox-Appimage/releases/tags/firefox | grep -oE 'https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox.*x86_64.AppImage' | head -n 1)
 
