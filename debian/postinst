@@ -1,4 +1,26 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+#############################################################################################################################################################################
+#   The license used for this file and its contents is: BSD-3-Clause                                                                                                        #
+#                                                                                                                                                                           #
+#   Copyright <2024> <Uri Herrera <uri_herrera@nxos.org>>                                                                                                                   #
+#                                                                                                                                                                           #
+#   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:                          #
+#                                                                                                                                                                           #
+#    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.                                        #
+#                                                                                                                                                                           #
+#    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer                                      #
+#       in the documentation and/or other materials provided with the distribution.                                                                                         #
+#                                                                                                                                                                           #
+#    3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software                    #
+#       without specific prior written permission.                                                                                                                          #
+#                                                                                                                                                                           #
+#    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,                      #
+#    THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS                  #
+#    BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE                 #
+#    GOODS OR SERVICES; LOSS OF USE, DATA,   OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,                      #
+#    STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.   #
+#############################################################################################################################################################################
 
 set -x
 
@@ -20,13 +42,12 @@ create_directories() {
     fi
 }
 
-# Check and create directories if necessary
 create_directories
 
-# Set User-Agent header
+# -- Set User-Agent header
 user_agent="BrightSign/8.2.55.5 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36"
 
-# Function to download and install an AppImage
+# -- Function to download and install an AppImage
 download_appimage() {
     local name="$1"
     local url="$2"
@@ -36,7 +57,7 @@ download_appimage() {
     chmod +x "$destination"
 }
 
-# Function to download and install a binary
+# -- Function to download and install a binary
 download_binary() {
     local name="$1"
     local url="$2"
@@ -45,29 +66,29 @@ download_binary() {
     chmod +x "$destination"
 }
 
-# Retrieve the latest release URL for hw-probe AppImage with tag "1.6"
+# -- Retrieve the latest release URL for hw-probe AppImage with tag "1.6"
 latest_release_url=$(curl -sL "https://api.github.com/repos/linuxhw/hw-probe/releases/tags/1.6" | grep -oE 'https://github.com/linuxhw/hw-probe/releases/download/1.6/hw-probe.*x86_64.AppImage' | head -n 1)
 
-# Extract the filename from the URL
+# -- Extract the filename from the URL
 filename=$(basename "$latest_release_url")
 
-# Download and install the latest hw-probe AppImage
+# -- Download and install the latest hw-probe AppImage
 download_appimage "$filename" "$latest_release_url"
 mv /Applications/hw-probe-* /Applications/hw-probe
 
-# Retrieve the latest release URL for Firefox AppImage
+# -- Retrieve the latest release URL for Firefox AppImage
 latest_release_url=$(curl -sL https://api.github.com/repos/srevinsaju/Firefox-Appimage/releases/tags/firefox | grep -oE 'https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox.*x86_64.AppImage' | head -n 1)
 
-# Extract the filename from the URL
+# -- Extract the filename from the URL
 filename=$(basename "$latest_release_url")
 
-# Download and install the latest Firefox AppImage
+# -- Download and install the latest Firefox AppImage
 download_appimage "$filename" "$latest_release_url"
 mv /Applications/firefox-* /Applications/firefox
 
-# Download and install appimaged AppImage
+# -- Download and install appimaged AppImage
 download_appimage "appimaged" "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage"
 mv /Applications/appimaged /etc/skel/.local/bin
 
-# Download and install zap binary
+# -- Download and install zap binary
 download_binary "zap" "https://github.com/srevinsaju/zap/releases/download/continuous/zap-amd64"
